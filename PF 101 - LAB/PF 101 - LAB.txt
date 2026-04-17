@@ -1,0 +1,15 @@
+PF 101 - LAB
+
+Reflection
+
+1.What does await do? Why do we need it?
+await tells JavaScript to pause and wait for a task (like fetching data) to finish 
+before moving to the next line. We need it to ensure our code doesn't try to use data that hasn't arrived yet.
+
+2. What happens if the API is down? How does our code handle that?
+If the API is down, the request "fails" or "rejects." Our code handles this using a catch block, 
+which prevents the whole program from crashing and allows us to show an error message instead.
+
+3. What's the difference between try and catch?
+try is the block where you put the code you hope will work (the main logic).
+catch is the "safety net" block that only runs if something goes wrong inside the try block. 
